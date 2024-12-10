@@ -12,12 +12,6 @@ const CourseListCard = ({ items }) => {
           <CourseItem {...course3} />
         </div>
       </Card>
-      {/* <div className="card">
-          <div className="card__header">강의 목록</div>
-          <div className="card__body">
-            
-          </div>
-        </div> */}
     </>
   );
 };
