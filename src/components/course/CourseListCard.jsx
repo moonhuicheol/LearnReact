@@ -2,7 +2,7 @@ import { Fragment } from "react";
 import Card from "../Card";
 import CourseItem from "./CourseItem";
 
-const CourseListCard = ({ title, items }) => {
+const CourseListCard = ({ onFavorite, title, items }) => {
   const lastIndex = items.length - 1;
 
   return (
@@ -11,7 +11,7 @@ const CourseListCard = ({ title, items }) => {
         <div className="courses">
           {items.map((item, index) => (
             <Fragment key={item.id}>
-              <CourseItem {...item} />
+              <CourseItem {...item} onFavorite={onFavorite} />
               {index !== lastIndex && <hr className="divider" />}
             </Fragment>
           ))}
